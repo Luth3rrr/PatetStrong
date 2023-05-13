@@ -1,12 +1,3 @@
-# Details
-
-Date : 2023-05-13 13:41:15
-
-Directory c:\\Users\\tamir\\OneDrive\\שולחן העבודה\\strong
-
-Total : 14 files,  1542 codes, 66 comments, 214 blanks, all 1822 lines
-
-[Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
 ## Files
 | filename | language | code | comment | blank | total |
@@ -25,5 +16,3 @@ Total : 14 files,  1542 codes, 66 comments, 214 blanks, all 1822 lines
 | [settings.html](/settings.html) | HTML | 46 | 0 | 5 | 51 |
 | [start-workout.html](/start-workout.html) | HTML | 34 | 2 | 2 | 38 |
 | [workouts.html](/workouts.html) | HTML | 27 | 2 | 4 | 33 |
-
-[Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
