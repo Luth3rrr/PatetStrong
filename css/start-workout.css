@@ -125,6 +125,7 @@ nav a:hover {
   margin-bottom: 20px;
   color: #ff5500;
 }
+
 .workout-form label {
   font-size: 20px;
   display: block;
@@ -133,8 +134,8 @@ nav a:hover {
 }
 
 .workout-form input[type="text"] {
-  font-size: 16px;
-  padding: 10px;
+  font-size: 10px;
+  padding: 100px;
   width: 100%;
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -183,57 +184,32 @@ footer a {
   color: #ff5500;
   text-decoration: none;
 }
-
-/* Media Queries */
-@media (max-width: 768px) {
-  /* Adjust the styles for mobile devices */
-
-  /* Reduce the font size for the hero section */
-  .hero h1 {
-    font-size: 32px;
-  }
-
-  .hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-
-  /* Adjust the width of the primary button */
-  .btn-primary {
-    width: 150px;
-    height: 50px;
-    font-size: 16px;
-  }
-
-  .btn-primary:before {
-    font-size: 16px;
-  }
-
-  /* Adjust the margin of the workout form */
-  .workout-form {
-    margin: 50px auto;
-    padding: 30px 20px;
-  }
-
-  .workout-form h2 {
-    font-size: 24px;
-  }
-
-  .workout-form label {
-    font-size: 16px;
-  }
-
-  .workout-form input[type="text"] {
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  .exercise-item .exercise-name {
-    font-size: 20px;
-  }
-
-  .exercise-item .exercise-description {
-    font-size: 14px;
-  }
+h2 {
+  color: #ff5500;
+  margin: 20px;
 }
 
+#finish-button {
+  background-color: #ff5500;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+#finish-button:hover {
+  background-color: #fff;
+  color: #ff5500;
+  border: 1px solid #ff5500;
+}
+#timer {
+  font-size: 32px;
+  color: #ff5500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* credit to patet */

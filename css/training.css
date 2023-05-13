@@ -1,3 +1,4 @@
+/* credit to patet */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -163,7 +164,6 @@ nav a:hover {
   border-radius: 5px;
   border: 1px solid #ccc;
 }
-
 .workout-form {
   max-width: 800px;
   margin: 0 auto;
@@ -265,3 +265,86 @@ footer p {
     margin-bottom: 15px;
   }
 }
+button[type="submit"] {
+  background-color: #ff5500;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #fff;
+  color: #ff5500;
+  border: 1px solid #ff5500;
+}
+/* Style the reps and sets inputs */
+.sets-input,
+.reps-input,
+.weight-input {
+  font-size: 15px;
+  padding: 12px;
+  width: 80px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Style the selected exercises container */
+#selected-exercises {
+  list-style: none;
+  margin-top: 10px;
+}
+
+#selected-exercises li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#selected-exercises li .sets-input,
+#selected-exercises li .reps-input {
+  margin-left: 10px;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  background-color: #ff5500;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #000000;
+  color: #ff5500;
+  transition: all 0.3s ease;
+  border: 1px solid #ff5500;
+}
+#exercise-suggestions li:hover {
+  cursor: pointer;
+  background-color: #ccc;
+  color: black;
+}
+.delete-button {
+  background-color: #ff5500;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.delete-button:hover {
+  background-color: #cc0000;
+}
+/* credit to patet */

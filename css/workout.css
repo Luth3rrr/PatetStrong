@@ -129,7 +129,6 @@ h1 {
 .delete-workout:hover {
   background-color: #cc0000;
 }
-
 .start-workout-link {
   background-color: #ff5500;
   color: #000000;
@@ -142,11 +141,9 @@ h1 {
   text-decoration: none;
   margin: 10px 0;
 }
-
 .start-workout-link:hover {
   color: #ffffff;
 }
-
 footer {
   background-color: #222;
   color: #fff;
@@ -163,4 +160,4 @@ footer {
 footer p {
   font-size: 16px;
 }
-
+/* credit to patet */
