@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>PatetStrong - settings</title>
+    <link rel="stylesheet" href="css/settings.css" />
+    <link rel="icon" href="img/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="create-workout.html">create-workout</a></li>
+          <li><a href="workouts.html">workouts</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Settings</h1>
+
+    <div class="settings-section">
+      <h2>Display Options</h2>
+      <label>
+        <input type="checkbox" id="dark-mode-checkbox" />
+        Enable Dark Mode
+      </label>
+      <label>
+        <input type="checkbox" id="compact-mode-checkbox" />
+        Enable Compact Mode
+      </label>
+    </div>
+
+    <div class="settings-section">
+      <h2>Notifications</h2>
+      <label>
+        <input type="checkbox" id="email-notifications-checkbox" />
+        Enable Email Notifications
+      </label>
+      <label>
+        <input type="checkbox" id="push-notifications-checkbox" />
+        Enable Push Notifications
+      </label>
+    </div>
+
+    <button id="save-settings-button">Save Settings</button>
+    <script src="js/settings.js"></script>
+  </body>
+</html>

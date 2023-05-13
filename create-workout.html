@@ -1,0 +1,60 @@
+<!-- credit to Patet -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>PatetStrong - Create Workout</title>
+    <link rel="stylesheet" href="css/training.css" />
+    <link rel="icon" href="img/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="create-workout.html">create-workout</a></li>
+          <li><a href="workouts.html">workouts</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="workout-form">
+        <h2>Create Workout</h2>
+        <form id="exercise-form">
+          <div class="form-group">
+            <label for="workout-name">Workout Name</label>
+            <input
+              type="text"
+              id="workout-name"
+              placeholder="Enter workout name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exercise-search">Exercise Search</label>
+            <input
+              type="text"
+              id="exercise-search"
+              placeholder="Start typing exercise name"
+            />
+          </div>
+          <div id="exercise-suggestions"></div>
+          <div class="form-group">
+            <label>Selected Exercises</label>
+            <ul id="selected-exercises"></ul>
+          </div>
+          <button type="submit">Create Workout</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 PatetStrong</p>
+    </footer>
+
+    <script src="js/create-workout.js"></script>
+  </body>
+</html>
+<!-- credit to Patet -->

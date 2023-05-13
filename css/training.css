@@ -1,0 +1,350 @@
+/* credit to patet */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the page background color */
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+/* Style the navigation bar */
+header {
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #ff5500;
+}
+
+/* Style the hero section */
+.hero {
+  background-image: url("img/training-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero p {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.btn-primary {
+  background-color: #ff5500;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #ff5500;
+  border: 1px solid #ff5500;
+}
+
+/* Style the features section */
+.features {
+  background-color: #333;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.features ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features li {
+  flex-basis: 30%;
+}
+
+.features img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.features h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.features p {
+  font-size: 18px;
+}
+
+/* Style the training selection section */
+.training-selection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.training-selection h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.training-selection .form-group {
+  margin-bottom: 20px;
+}
+
+.training-selection label {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.training-selection select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.workout-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.workout-form h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #ff5500;
+}
+
+.workout-form label {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.workout-form input[type="text"] {
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.exercises-container {
+  margin-top: 30px;
+}
+
+.exercise-checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.exercise-checkbox {
+  margin-right: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 0 10px;
+  }
+
+  nav li {
+    margin-left: 10px;
+  }
+
+  .hero {
+    height: 300px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .workout-form {
+    padding: 30px 10px;
+  }
+
+  .workout-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .workout-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .workout-form input[type="text"] {
+    font-size: 16px;
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+}
+button[type="submit"] {
+  background-color: #ff5500;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #fff;
+  color: #ff5500;
+  border: 1px solid #ff5500;
+}
+/* Style the reps and sets inputs */
+.sets-input,
+.reps-input,
+.weight-input {
+  font-size: 15px;
+  padding: 12px;
+  width: 80px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Style the selected exercises container */
+#selected-exercises {
+  list-style: none;
+  margin-top: 10px;
+}
+
+#selected-exercises li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#selected-exercises li .sets-input,
+#selected-exercises li .reps-input {
+  margin-left: 10px;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  background-color: #ff5500;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #000000;
+  color: #ff5500;
+  transition: all 0.3s ease;
+  border: 1px solid #ff5500;
+}
+#exercise-suggestions li:hover {
+  cursor: pointer;
+  background-color: #ccc;
+  color: black;
+}
+.delete-button {
+  background-color: #ff5500;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.delete-button:hover {
+  background-color: #cc0000;
+}
+/* credit to patet */
