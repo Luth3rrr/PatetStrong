@@ -67,15 +67,15 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: 64px;
+  font-size: 48px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .hero p {
   font-size: 24px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .btn-primary {
@@ -110,6 +110,7 @@ nav a:hover {
 
 .features ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
   max-width: 1200px;
@@ -118,6 +119,7 @@ nav a:hover {
 
 .features li {
   flex-basis: 30%;
+  margin-bottom: 30px;
 }
 
 .features img {
@@ -133,9 +135,8 @@ nav a:hover {
 .features p {
   font-size: 18px;
 }
-a {
-  text-decoration: none;
-}
+
+/* Style the footer */
 footer {
   background-color: #222;
   color: #fff;
@@ -152,4 +153,42 @@ footer {
 footer p {
   font-size: 16px;
 }
-/* credit to patet */
+
+/* Media Queries */
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Adjust the styles for mobile devices */
+
+  /* Reduce the font size for the hero section */
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  /* Center-align the navigation items */
+  nav ul {
+    justify-content: center;
+  }
+
+  nav li {
+    margin-left: 10px;
+  }
+
+  /* Adjust the flex basis for feature items */
+  .features li {
+    flex-basis: 100%;
+  }
+
+  /* Reduce the font size for feature headings */
+  .features h3 {
+    font-size: 20px;
+  }
+
+  .features p {
+    font-size: 16px;
+  }
+}
+
