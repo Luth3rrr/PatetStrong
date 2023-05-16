@@ -78,21 +78,60 @@ nav a:hover {
   margin-bottom: 50px;
 }
 
-.btn-primary {
-  background-color: #ff5500;
+.cssbuttons-io-button {
+  background: #ff5500;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500px;
+  border-radius: 0.9em;
   border: none;
-  color: #fff;
-  font-size: 18px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #ff5500;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  justify-content: center;
+  text-decoration: none;
+  width: 170px;
 }
 
-.btn-primary:hover {
-  background-color: #fff;
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #ff5500;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
   color: #ff5500;
-  border: 1px solid #ff5500;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
 }
 
 /* Style the features section */
@@ -336,7 +375,7 @@ button[type="submit"]:hover {
   color: black;
 }
 .delete-button {
-  background-color: #ff5500;
+  background-color: #ff0000;
   color: #fff;
   border: none;
   padding: 6px 12px;

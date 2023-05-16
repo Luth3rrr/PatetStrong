@@ -7,14 +7,16 @@ const selectedExercisesContainer = document.querySelector(
 );
 const exercisesCheckboxes = document.querySelectorAll(".exercise-checkbox");
 
-exerciseForm.addEventListener("submit", (e) => {
+const submitButton = document.querySelector("#submit-button");
+
+submitButton.addEventListener("click", (e) => {
   e.preventDefault();
   const workoutName = document.querySelector("#workout-name").value;
   const selectedExercises = Array.from(selectedExercisesContainer.children).map(
     (exerciseElement) => {
       const exerciseName = exerciseElement.textContent;
-      const setsInput = exerciseElement.querySelector(".weight-input");
-      const weightInput = exerciseElement.querySelector(".sets-input");
+      const setsInput = exerciseElement.querySelector(".sets-input");
+      const weightInput = exerciseElement.querySelector(".weight-input");
       const repsInput = exerciseElement.querySelector(".reps-input");
       const sets = setsInput.value || 0;
       const weight = weightInput.value || 0;
@@ -29,19 +31,12 @@ exerciseForm.addEventListener("submit", (e) => {
       exercises: selectedExercises,
     };
 
-    // get current workouts from local storage or set to an empty array
     let workouts = JSON.parse(localStorage.getItem("workouts")) || [];
-
-    // add new workout to workouts array
     workouts.push(workout);
-
-    // store updated workouts array in local storage
     localStorage.setItem("workouts", JSON.stringify(workouts));
 
-    // redirect to workouts page
     window.location.href = "workouts.html";
   } else {
-    // show an error message to the user
     alert("Please enter a workout name and select at least one exercise.");
   }
 });

@@ -86,30 +86,7 @@ const finishWorkout = () => {
       <html>
       <head>
       <title>Training Information</title>
-      <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-      }
-  
-      h1 {
-        margin-bottom: 20px;
-      }
-  
-      h2 {
-        margin-top: 30px;
-      }
-  
-      ul {
-        list-style-type: none;
-        padding-left: 0;
-      }
-  
-      li {
-        margin-bottom: 10px;
-      }
-      </style>
-      </head>
+          </head>
       <body>
       <h1>Training Information</h1>
       <p>Duration: ${formatDuration(trainingDuration)}</p>

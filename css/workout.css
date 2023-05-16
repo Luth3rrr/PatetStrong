@@ -68,10 +68,8 @@ h1 {
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
-
 .exercise {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
@@ -83,24 +81,74 @@ h1 {
 
 .exercise-details {
   display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
+  align-items: center;
   margin-left: 10px;
   text-align: right;
   color: #888;
 }
 
-/* Style for the delete button */
 .delete-workout {
-  background-color: #000000;
-  color: #fff;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 3px;
-  font-size: 14px;
+  width: 150px;
+  height: 50px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #e62222;
+  border-radius: 10px;
+  margin: 20px;
 }
 
+.delete-workout,
+.delete-workout span {
+  transition: 200ms;
+}
+
+.delete-workout .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+}
+
+.delete-workout .icon {
+  position: absolute;
+  border-left: 1px solid #c41b1b;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-workout svg {
+  width: 15px;
+  fill: #eee;
+}
+
+.delete-workout:hover {
+  background: #ff3636;
+}
+
+.delete-workout:hover .text {
+  color: transparent;
+}
+
+.delete-workout:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+}
+
+.delete-workout:focus {
+  outline: none;
+}
+
+.delete-workout:active .icon svg {
+  transform: scale(0.8);
+}
 /* Style for the workout name and the delete button container */
 .workout-container {
   display: flex;
@@ -111,6 +159,7 @@ h1 {
   background-color: #f2f2f2;
   border-radius: 3px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  align-items: center;
 }
 
 .workout-container {
@@ -125,25 +174,66 @@ h1 {
   margin-right: 10px;
 }
 
-/* Style for the delete button on hover */
-.delete-workout:hover {
-  background-color: #cc0000;
-}
 .start-workout-link {
-  background-color: #ff5500;
-  color: #000000;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 3px;
-  font-size: 14px;
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #03045e;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
   cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  margin: 10px 0;
+  background-color: #ff5500;
 }
-.start-workout-link:hover {
+
+.start-workout-link::before,
+.start-workout-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.start-workout-link::before {
+  left: -10px;
+  background: #ff5500;
+}
+
+.start-workout-link::after {
+  right: -10px;
+  background: #862e03;
+}
+
+.start-workout-link:hover::before,
+.start-workout-link:hover::after {
+  width: 58%;
+}
+
+.start-workout-link:hover span {
   color: #ffffff;
+  transition: 0.3s;
 }
+
+.start-workout-link span {
+  color: #ffffff;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+}
+.start-delete-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
 footer {
   background-color: #222;
   color: #fff;
@@ -159,5 +249,126 @@ footer {
 
 footer p {
   font-size: 16px;
+}
+.delete-exercise {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background: linear-gradient(-45deg, #e62222, #e62222, #e62222);
+  background-size: 1000% 1000%;
+  animation: gradient 20s ease infinite;
+  margin-left: 20px;
+}
+
+/* Button's gradient animation */
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  font-size: 2em;
+  color: white;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* text */
+.d-text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 500;
+  transition-duration: 0.3s;
+}
+/* hover effect on button width */
+.delete-exercise:hover {
+  width: 125px;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+.delete-exercise:hover .sign {
+  width: 30%;
+  transition-duration: 0.3s;
+  padding-left: 10px;
+}
+/* hover effect button's text */
+.delete-exercise:hover .d-text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: 0.3s;
+  padding-right: 10px;
+}
+/* button click effect*/
+.delete-exercise:active {
+  transform: translate(2px, 2px);
+}
+.edit-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100px;
+  height: 40px;
+  border: none;
+  padding: 0px 20px;
+  background-color: rgb(14, 92, 5);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px rgb(1, 121, 13);
+  transition-duration: 0.3s;
+}
+
+.edit-svg {
+  width: 13px;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  fill: white;
+  transition-duration: 0.3s;
+}
+
+.edit-btn:hover {
+  color: transparent;
+}
+
+.edit-btn:hover svg {
+  right: 43%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  transition-duration: 0.3s;
+}
+
+.edit-btn:active {
+  transform: translate(3px, 3px);
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 0px #22b8e6;
 }
 /* credit to patet */

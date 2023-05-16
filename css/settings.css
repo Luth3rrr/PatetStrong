@@ -76,23 +76,44 @@ label {
 input[type="checkbox"] {
   margin-right: 10px;
 }
-
-button {
-  background-color: #ff5500;
+#save-settings-button {
+  background: #ff5500;
   border: none;
-  color: #fff;
-  font-size: 18px;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 15px;
+  font-weight: 600;
+  width: 125px;
   text-transform: uppercase;
-  transition: all 0.3s ease;
   cursor: pointer;
+  transform: skew(-21deg);
   display: block;
   margin: 20px auto 0;
 }
 
-button:hover {
-  background-color: #000000;
-  color: #ff5500;
-  border: 1px solid #ff5500;
+span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+#save-settings-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+#save-settings-button:hover {
+  color: #fff;
+}
+
+#save-settings-button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
 }
