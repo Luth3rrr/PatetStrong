@@ -1,12 +1,5 @@
 # Details
-
-Date : 2023-05-16 15:27:16
-
-Directory c:\\Users\\tamir\\OneDrive\\שולחן העבודה\\srongchack
-
 Total : 15 files,  1938 codes, 59 comments, 258 blanks, all 2255 lines
-
-[Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
 ## Files
 | filename | language | code | comment | blank | total |
@@ -26,5 +19,3 @@ Total : 15 files,  1938 codes, 59 comments, 258 blanks, all 2255 lines
 | [settings.html](/settings.html) | HTML | 46 | 0 | 5 | 51 |
 | [start-workout.html](/start-workout.html) | HTML | 34 | 2 | 2 | 38 |
 | [workouts.html](/workouts.html) | HTML | 27 | 2 | 4 | 33 |
-
-[Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
